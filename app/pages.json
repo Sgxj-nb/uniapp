@@ -1,0 +1,141 @@
+{
+	 //开启easycom组件模式（无需手动引入，开发工具自带智能感知）
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"h-(.*)": "@/components/hmw/h-$1/h-$1.vue",
+			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue",
+			"aui-(.*)": "@/components/aui-$1/aui-$1.vue"
+		}
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path" : "pages/welcome/welcome",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		},
+		{
+		    "path" : "pages/tabbar/home/home",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+		    "path" : "pages/tabbar/favorites/favorites",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+		    "path" : "pages/tabbar/profile/profile",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "shop-top"
+			}
+		},
+		{
+		    "path" : "pages/example/loading/loading",
+		    "style" : {
+				"navigationBarTitleText": "loading加载弹窗",
+				"h5": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+		    "path" : "pages/example/dialog/dialog",
+		    "style" : {
+				"navigationBarTitleText": "dialog模态弹窗",
+				"h5": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+		    "path" : "pages/example/actionmenu/actionmenu",
+		    "style" : {
+				"navigationBarTitleText": "actionmenu底部菜单",
+				"h5": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+		    "path" : "pages/example/actionsheet/actionsheet",
+		    "style" : {
+				"navigationBarTitleText": "actionsheet操作弹窗",
+				"h5": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+		    "path" : "pages/example/toast/toast",
+		    "style" : {
+				"navigationBarTitleText": "toast消息提示弹窗",
+				"h5": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+		    "path" : "pages/example/popover/popover",
+		    "style" : {
+				"navigationBarTitleText": "popover气泡选择框",
+				"h5": {
+					"titleNView": false
+				}
+			}
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "shop-top",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#B6B6B6",
+		"selectedColor": "#FFB500",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/tabbar/home/home",
+				"iconPath": "static/navigation/home.png",
+				"selectedIconPath": "static/navigation/home_selected.png",
+				"text": "HOME"
+			},
+			{
+				"pagePath": "pages/tabbar/favorites/favorites",
+				"iconPath": "static/navigation/favorites.png",
+				"selectedIconPath": "static/navigation/favorites_selected.png",
+				"text": "FAVORITES"
+			},
+			{
+				"pagePath": "pages/tabbar/profile/profile",
+				"iconPath": "static/navigation/profile.png",
+				"selectedIconPath": "static/navigation/profile_selected.png",
+				"text": "PROFILE"
+			}
+		]
+	}
+}

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* 自定义Tab的话，可以打开这个，隐藏默认的Tab */
+uni-page-head{
+	display: none;
+}
+uni-page-wrapper{
+	height: 100vh !important;
+}
+
+.page {
+	height: 100vh;
+	box-sizing: border-box;
+}
+
+.tabbar {
+	padding-bottom: 100rpx;
+}
+
