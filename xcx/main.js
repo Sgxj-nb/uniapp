@@ -1,11 +1,26 @@
-import Vue from 'vue'
-import App from './App'
+import App from './App';
 
-Vue.config.productionTip = false
-
-App.mpType = 'app'
-
+// #ifndef VUE3
+import Vue from 'vue';
+import store from './pages/store';
+Vue.config.productionTip = false;
+App.mpType = 'app';
 const app = new Vue({
-    ...App
-})
-app.$mount()
+  ...App,
+  store
+});
+app.$mount();
+// #endif
+
+/***
+ * @记住不要把全局挂在的放在这里面
+ * */
+// #ifdef VUE3
+import { createSSRApp } from 'vue';
+export function createApp() {
+  const app = createSSRApp(App);
+  return {
+    app
+  };
+}
+// #endif
