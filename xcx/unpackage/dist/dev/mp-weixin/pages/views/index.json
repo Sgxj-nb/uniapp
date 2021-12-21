@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "测试界面",
-  "usingComponents": {}
+  "usingComponents": {
+    "wxmodel": "/components/wxmodel"
+  }
 }

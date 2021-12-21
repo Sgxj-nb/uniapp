@@ -8734,9 +8734,9 @@ function normalizeComponent (
 
 /***/ }),
 /* 12 */
-/*!******************************************************!*\
-  !*** D:/develop/长沙凹印/uniapp/模板/pages/store/index.js ***!
-  \******************************************************/
+/*!************************************************!*\
+  !*** D:/develop/长沙凹印/uniapp/模板/store/index.js ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8747,9 +8747,21 @@ var _getters = _interopRequireDefault(__webpack_require__(/*! ./getters */ 14));
 var _user = _interopRequireDefault(__webpack_require__(/*! ./modules/user */ 15));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 _vue.default.use(_vuex.default);var _default =
 new _vuex.default.Store({
-  state: {},
-  mutations: {},
-  actions: {},
+  state: {
+    setovj: {
+      show: false } },
+
+
+  mutations: {
+    setinfoput: function setinfoput(state, value) {
+      state.setovj = value;
+    } },
+
+  actions: {
+    getinfoput: function getinfoput(_ref) {var commit = _ref.commit;
+      commit('setinfoput');
+    } },
+
   modules: {
     user: _user.default },
 
@@ -10013,9 +10025,9 @@ module.exports = index_cjs;
 
 /***/ }),
 /* 14 */
-/*!********************************************************!*\
-  !*** D:/develop/长沙凹印/uniapp/模板/pages/store/getters.js ***!
-  \********************************************************/
+/*!**************************************************!*\
+  !*** D:/develop/长沙凹印/uniapp/模板/store/getters.js ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10025,9 +10037,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 15 */
-/*!*************************************************************!*\
-  !*** D:/develop/长沙凹印/uniapp/模板/pages/store/modules/user.js ***!
-  \*************************************************************/
+/*!*******************************************************!*\
+  !*** D:/develop/长沙凹印/uniapp/模板/store/modules/user.js ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10036,9 +10048,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
-var _api = __webpack_require__(/*! ../../api */ 16); /***
-                                  * @登陆状态管理
-                                  * */var _default = {
+var _api = __webpack_require__(/*! @/api */ 16); /***
+                              * @登陆状态管理
+                              * */var _default = {
   namespaced: true,
   state: {
     info: null },
@@ -10065,14 +10077,14 @@ var _api = __webpack_require__(/*! ../../api */ 16); /***
 
 /***/ }),
 /* 16 */
-/*!****************************************************!*\
-  !*** D:/develop/长沙凹印/uniapp/模板/pages/api/index.js ***!
-  \****************************************************/
+/*!**********************************************!*\
+  !*** D:/develop/长沙凹印/uniapp/模板/api/index.js ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.getUserInfo = getUserInfo;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 17));var _request = _interopRequireDefault(__webpack_require__(/*! ../utils/request */ 20));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}
+Object.defineProperty(exports, "__esModule", { value: true });exports.getUserInfo = getUserInfo;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 17));var _request = _interopRequireDefault(__webpack_require__(/*! @/utils/request */ 20));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}
 
 // 用户信息接口
 function getUserInfo() {return _getUserInfo.apply(this, arguments);}function _getUserInfo() {_getUserInfo = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var res;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
@@ -10872,9 +10884,9 @@ if (hadRuntime) {
 
 /***/ }),
 /* 20 */
-/*!********************************************************!*\
-  !*** D:/develop/长沙凹印/uniapp/模板/pages/utils/request.js ***!
-  \********************************************************/
+/*!**************************************************!*\
+  !*** D:/develop/长沙凹印/uniapp/模板/utils/request.js ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10924,9 +10936,9 @@ var _default =
 
 /***/ }),
 /* 21 */
-/*!***********************************************************!*\
-  !*** D:/develop/长沙凹印/uniapp/模板/pages/utils/token-util.js ***!
-  \***********************************************************/
+/*!*****************************************************!*\
+  !*** D:/develop/长沙凹印/uniapp/模板/utils/token-util.js ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10963,9 +10975,9 @@ function removeToken() {
 
 /***/ }),
 /* 22 */
-/*!*********************************************************!*\
-  !*** D:/develop/长沙凹印/uniapp/模板/pages/config/setting.js ***!
-  \*********************************************************/
+/*!***************************************************!*\
+  !*** D:/develop/长沙凹印/uniapp/模板/config/setting.js ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10988,9 +11000,9 @@ exports.TOKEN_HEADER_NAME = TOKEN_HEADER_NAME;var TOKEN_STORE_NAME = 'token';exp
 /* 27 */,
 /* 28 */,
 /* 29 */
-/*!**********************************************************!*\
-  !*** D:/develop/长沙凹印/uniapp/模板/pages/api/login/index.js ***!
-  \**********************************************************/
+/*!****************************************************!*\
+  !*** D:/develop/长沙凹印/uniapp/模板/api/login/index.js ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

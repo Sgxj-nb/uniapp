@@ -1,1 +1,1 @@
-<view class="data-v-e876c4f0"></view>
+<view class="data-v-e876c4f0"><wxmodel vue-id="2660d704-1" showname="{{true}}" custom="{{true}}" show="{{show}}" data-event-opts="{{[['^updateShow',[['__set_sync',['$0','show','$event'],['']]]]]}}" bind:updateShow="__e" class="data-v-e876c4f0" bind:__l="__l"></wxmodel><button data-event-opts="{{[['tap',[['add',['$event']]]]]}}" bindtap="__e" class="data-v-e876c4f0">登陆</button></view>

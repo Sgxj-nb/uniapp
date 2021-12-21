@@ -128,16 +128,29 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var Wxmodel = function Wxmodel() {__webpack_require__.e(/*! require.ensure | components/wxmodel */ "components/wxmodel").then((function () {return resolve(__webpack_require__(/*! @/components/wxmodel.vue */ 38));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
+
+
 {
+  components: {
+    Wxmodel: Wxmodel },
+
   data: function data() {
-    return {};
+    return {
+      show: false };
+
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    add: function add() {
+      this.show = true;
+    } } };exports.default = _default;
 
 /***/ })
 
